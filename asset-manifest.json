@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nimo/static/css/main.a5825d51.css",
+    "main.js": "/nimo/static/js/main.b3ac71c4.js",
+    "static/media/vid4.mp4": "/nimo/static/media/vid4.b7f3d8a8c705108dbc5e.mp4",
+    "static/media/vid5.mp4": "/nimo/static/media/vid5.ba73cdb05d741341b2bc.mp4",
+    "static/media/video__xx.mp4": "/nimo/static/media/video__xx.e6a728a0b16893bb816e.mp4",
+    "static/media/vid6.mp4": "/nimo/static/media/vid6.f86c74d708b43880ed6b.mp4",
+    "static/media/vid3.mp4": "/nimo/static/media/vid3.0c78224d3ba222919c3e.mp4",
+    "static/media/vid2.mp4": "/nimo/static/media/vid2.1ddeb803224e5dd95635.mp4",
+    "static/media/vid7.mp4": "/nimo/static/media/vid7.4252f02b42974e12002c.mp4",
+    "static/media/img.webp": "/nimo/static/media/img.26dc1d3527f6f60291f5.webp",
+    "static/media/video.module.css.map": "/nimo/static/media/video.module.css.cdb9b0e517aaf85a965d.map",
+    "index.html": "/nimo/index.html",
+    "main.a5825d51.css.map": "/nimo/static/css/main.a5825d51.css.map",
+    "main.b3ac71c4.js.map": "/nimo/static/js/main.b3ac71c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5825d51.css",
+    "static/js/main.b3ac71c4.js"
+  ]
+}
