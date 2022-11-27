@@ -1,0 +1,60 @@
+:root{
+    --icon-fill-color:white;
+    --navigator-bg : #111111;
+}
+
+[data-theme = "light"]{
+    --icon-fill-color:black;
+    --navigator-bg : white;
+}
+
+.navigator_container{
+
+    top: 40%;
+    right: 1%;
+    position: fixed;
+    border-radius: 5px;
+    z-index: 1000;
+
+    img{
+        width: 54px;
+        position: absolute;
+        z-index: -10;
+        top: -35px;
+        transition: top .3s;
+
+        &:hover{
+            top: -50px;
+        }
+    }
+
+    .navigator_list{
+
+        background-color: var(--navigator-bg);
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        align-items: center;
+        border-radius: 5px;
+
+        .navigator_item{
+
+            padding: .8rem 1.05rem;
+            opacity: .4;
+            border-bottom:1px solid var(--icon-fill-color) ;
+
+            svg{
+
+                width: 21px;
+                path{
+                    fill:var(--icon-fill-color);
+                }
+            }
+            .active{
+                width: 19px;
+                height: 21px;
+            }
+        }
+    }
+}

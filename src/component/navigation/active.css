@@ -1,0 +1,7 @@
+.active > a{
+   
+    border-bottom: 2px solid white;
+}
+.active{
+    opacity: 1 !important;
+}

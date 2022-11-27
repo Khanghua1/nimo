@@ -1,0 +1,14 @@
+.nimo__main {
+  background-color: var(--background);
+  margin-top: -.3rem;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  padding-bottom: 5rem;
+}
+
+.nimo__main_group {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=home.module.css.map */

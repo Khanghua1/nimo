@@ -1,0 +1,67 @@
+:root {
+  --icon-fill-color:white;
+  --navigator-bg: #111111;
+}
+
+[data-theme="light"] {
+  --icon-fill-color:black;
+  --navigator-bg: white;
+}
+
+.navigator_container {
+  top: 40%;
+  right: 1%;
+  position: fixed;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.navigator_container img {
+  width: 54px;
+  position: absolute;
+  z-index: -10;
+  top: -35px;
+  -webkit-transition: top .3s;
+  transition: top .3s;
+}
+
+.navigator_container img:hover {
+  top: -50px;
+}
+
+.navigator_container .navigator_list {
+  background-color: var(--navigator-bg);
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.navigator_container .navigator_list .navigator_item {
+  padding: .8rem 1.05rem;
+  opacity: .4;
+  border-bottom: 1px solid var(--icon-fill-color);
+}
+
+.navigator_container .navigator_list .navigator_item svg {
+  width: 21px;
+}
+
+.navigator_container .navigator_list .navigator_item svg path {
+  fill: var(--icon-fill-color);
+}
+
+.navigator_container .navigator_list .navigator_item .active {
+  width: 19px;
+  height: 21px;
+}
+/*# sourceMappingURL=navigator.module.css.map */

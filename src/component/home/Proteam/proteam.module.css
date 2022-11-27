@@ -1,0 +1,193 @@
+:root {
+  --pro-text-color: #FFFFFF ;
+  --pro-background-color: #222222;
+  --pro-background-banner:rgba(50,50,50,0.8);
+}
+
+[data-theme="light"] {
+  --pro-text-color: #000000 ;
+  --pro-background-color: #FFFFFF;
+  --pro-background-banner:rgba(255 ,255 ,255,0.8);
+}
+
+.main {
+  padding-bottom: 3rem;
+}
+
+.main .headding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .headding h1 {
+  color: var(--pro-text-color);
+}
+
+.main .headding .headding_svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .headding .headding_svg span {
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: var(--pro-background-color);
+  padding: .1rem .4rem 0 .4rem;
+  cursor: pointer;
+  margin-left: .5rem;
+  opacity: .8;
+}
+
+.main .headding .headding_svg span svg {
+  width: 12px;
+}
+
+.main .headding .headding_svg span svg path {
+  fill: var(--pro-text-color);
+}
+
+.main .slide {
+  margin-top: .5rem;
+}
+
+.main .slide .slide_container {
+  width: 100%;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.main .slide .slide_container .slide_list {
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .slide .slide_container .slide_list .slide_item {
+  margin-right: 1.5rem;
+  position: relative;
+}
+
+.slide_link {
+  text-decoration: none;
+}
+
+.slide_link .slide_description {
+  background: var(--pro-background-color);
+  height: 220px;
+  width: 600px;
+  padding: 15px 15px 15px 345px;
+  border-radius: 5px;
+}
+
+.slide_link .slide_description p {
+  color: var(--pro-text-color);
+  font-size: 13px;
+  opacity: .7;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  text-overflow: ellipsis;
+  height: 90px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.slide_link .slide_cover {
+  width: 327px;
+  height: 260px;
+  position: absolute;
+  top: -1.3rem;
+  -webkit-transform: skew(-8.745deg) translateX(-20px);
+          transform: skew(-8.745deg) translateX(-20px);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.slide_link .slide_cover img {
+  -webkit-transform: skew(8.745deg) translateX(20px);
+          transform: skew(8.745deg) translateX(20px);
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide_link .slide_banner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  width: 350px;
+  right: 5%;
+  border-radius: 5px;
+  -webkit-transform: skew(-9.765deg) translateX(10px);
+          transform: skew(-9.765deg) translateX(10px);
+  overflow: hidden;
+}
+
+.slide_link .slide_banner .slide_banner_container {
+  -webkit-transform: skew(9.765deg) translateX(-10px);
+          transform: skew(9.765deg) translateX(-10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--pro-background-banner);
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slide_link .slide_banner .slide_banner_container .avatar {
+  margin: .33rem .5rem .1rem 2rem;
+  width: 80px;
+}
+
+.slide_link .slide_banner .slide_banner_container .avatar img {
+  width: 100%;
+}
+
+.slide_link .slide_banner .slide_banner_container .team_name {
+  margin: 22px 0 25.427px;
+}
+
+.slide_link .slide_banner .slide_banner_container .team_name h1 {
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  color: var(--pro-text-color);
+  width: 200px;
+  line-clamp: 1;
+  text-overflow: ellipsis;
+}
+
+.slide_link .slide_banner .slide_banner_container .arrow {
+  border-left: 1px solid gray;
+  height: 90px;
+  padding: 0rem .6rem;
+  opacity: .7;
+}
+
+.slide_link .slide_banner .slide_banner_container .arrow svg {
+  margin: auto;
+  height: 90px;
+  width: 8px;
+}
+
+.slide_link .slide_banner .slide_banner_container .arrow svg path {
+  fill: var(--pro-text-color);
+}
+/*# sourceMappingURL=proteam.module.css.map */

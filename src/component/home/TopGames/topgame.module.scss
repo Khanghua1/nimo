@@ -1,0 +1,288 @@
+:root{
+    //top game
+    --topgame-text-color:#FFFFFF;
+    --topgame-border-item :gray;
+    --topgame--background-item:#222222;
+    --topgame--border-img : black;
+}
+
+[data-theme='light'] {
+    //top game
+    --topgame-text-color:#222222;
+    --topgame-border-item : #FFFFFF;
+    --topgame--background-item:#FFFFFF;
+    --topgame--border-img : #f5f5f5;
+}
+
+.topgame{
+}
+.topgame__group{
+
+
+    .topgame__header{
+
+        padding:3rem 0 1rem 0;
+        margin-bottom: 1rem; 
+        display: flex;     
+          
+
+        .topgame__left{
+
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            a{
+                color: var(--topgame-text-color);
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                transition: all linear .2s;
+
+                h1{
+                    margin-right: 1.5rem;
+                    margin-top: -.4rem;
+                    
+                }
+            }
+
+            .topgame__left_list{
+
+                list-style-type:none;
+                display: flex;
+                align-items: center;
+
+                .topgame__left_item{
+
+                    border:1px solid var(--topgame-border-item);
+                    padding: .2rem 1rem;
+                    border-radius: 5px;
+                    margin-right: 1rem;
+                    background-color: var(--topgame--background-item);
+                    transition: all linear .2s;
+                    cursor: pointer;
+
+                    &:hover{
+                        border:1px solid #622df7;
+                    }
+                    &:hover > .topgame__left_link{
+                        color:#622df7 ;
+                    }
+                    .topgame__left_link{
+
+                        text-decoration: none;
+                        color: var(--topgame-text-color);
+                        font-size: 15px;
+                        transition: all linear .2s;
+                    }
+                }
+            }
+            
+        }
+        .topgame__right{
+            
+            display: flex;
+            align-items: center;
+
+            span{
+
+                border: 1px solid var(--topgame-border-item);
+                padding: .2rem .5rem .1rem .5rem;
+                border-radius: 5px ;
+                margin-left: 1rem;
+                cursor: pointer;
+                opacity: .7;
+                background-color: var(--topgame--background-item);
+
+                &:hover{
+                    opacity: 1;
+                }
+
+                svg{
+
+                    width: 12px;
+                    path{
+                        fill:var(--topgame-text-color);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .topgame__slides{
+      
+
+        .topgame__slides_container{
+
+            max-width: 1200px;
+            overflow: hidden;
+
+            .topgame__slides_list{
+
+                padding: 0;
+                display: flex;
+                list-style-type: none;
+                transition: all linear .3s;
+
+
+                .topgame__slides_item{
+
+                    max-width: 218px;
+                    padding: 1rem 1rem 0 0 ;
+                    margin-right: .8rem;
+
+                    .topgame__slides_link{
+
+                        text-decoration: none;
+  
+                            .topgame__slides_image{
+
+                                z-index: 10;
+                                width: 188px;
+                                position: relative;
+                                transform: skew(-8.745deg) translateX(22px);
+                                transition: all linear .3s;
+
+                                &:hover > .topgame__slides_image_bl{
+
+                                    transform: translate(14px,-14px);
+                                    border: 2px solid #622df7;
+                                }
+
+                                &:hover > .topgame__slides_image_bg{
+
+                                    background-color: #622df7;
+                                  
+
+                                }
+                                
+                                .topgame__slides_image_bl{
+                                        border: 2px solid var(--topgame--border-img);
+                                        width: 100%;
+                                        transition: all .2s;
+                                        z-index: 1;
+                                        position: relative;
+                                        height: 286px;
+                                        border-radius:5px;
+                                        &:hover > .topgame__slides_image_content{
+                                            display: block;
+                                        }
+
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 4px;
+                                        object-fit: cover;
+                                    }
+                                    .topgame__slides_image_content{
+
+                                        position: absolute;
+                                        top: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        z-index: 10;
+                                        transition: all .2s;
+                                        display: none;
+                                        
+                                        .topgame__slides_image_content_overlay{
+                                            
+                                            position: absolute;
+                                            width: 100%;
+                                            height: 100%;
+                                            background-color: #222222;
+                                            opacity: .8;
+                                            border-radius: 5px;
+                                            
+                                        }
+                                        h1{
+                                            font-size: 25px;
+                                            font-style: italic;
+                                            padding: 1rem 0;
+                                            color: white;
+                                            transform: translateX(22px);
+                                            position: relative;
+                                            z-index: 15;
+    
+                                            &::after{
+                                                content: "";
+                                                position: absolute;
+                                                width: 20%;
+                                                border-radius: 20px;
+                                                border-bottom:10px solid #622df7 ;
+                                                left: 0;
+                                                bottom: 0;
+                                            }
+                                        }
+                                        span{
+    
+                                            display: block;
+                                            position: absolute;
+                                            background-color: #622df7;
+                                            padding: .5rem 1rem;
+                                            border-radius: 100%;
+                                            bottom: 5%;
+                                            right: 10%;
+    
+                                            svg{
+    
+                                                width: 12px;
+                                                path{
+                                                    fill:white;
+                                                }
+                                            }
+                                        }
+    
+                                    }
+                                }
+                                
+                                .topgame__slides_image_bg{
+                                    
+                                    height: 100%;
+                                    position: absolute;
+                                    top: 0;
+                                    border-radius: 5px;
+                                    width: 100%;
+                                    transition: all .2s;
+                                    border: 2px solid var(--topgame--border-img);
+                                }
+                                
+                                
+                            }
+                        
+                    }
+
+
+
+                    .topgame__slides_content{
+
+                        color: var(--topgame-text-color);
+                        transition: all linear .2s;
+                        
+
+                        h1{
+                            cursor: text;
+                            font-size: 16px;
+                            padding: .3rem 0;
+                        }
+                        div{
+                            cursor: text;
+                            opacity: .6;
+                            font-size: 12px;
+                            padding: 0 0 .2rem 0;
+                        }
+                        label{
+                            padding: 0.2rem .7rem;
+                            border-radius: 5px;
+                            background: var(--topgame--background-item);
+                            cursor: text;
+                            opacity: .8;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
